@@ -1,0 +1,18 @@
+{
+    "name": "FlowChartTools Development",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [3000],
+    "postCreateCommand": "qmake && make",
+    "remoteUser": "vscode"
+  }
+  
